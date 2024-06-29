@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    padding: 40px;
+}
+
+.grid-container{
+    height: 80%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 20px;
+
+}
+
+.grid-container > .section{
+    color: white;
+    font-size: 1.5rem;
+    background: linear-gradient(69.9deg, rgb(76, 79, 106) 3.2%, rgb(118, 124, 163) 97.6%);
+    border: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container > #box4{
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 15px;
+
+    
+}
+
+#box4 .sub-section{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(69.9deg, rgb(104, 108, 146) 3.2%, rgb(38, 41, 65) 97.6%);
+    /* color: black; */
+    border: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 768px) {
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 0.2fr 1fr;
+    }
+    
+    .grid-container > #box4{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    #content1{
+        grid-column: 1 / 3 ;
+    }
+}

@@ -487,3 +487,9 @@
         left: 19%;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .hero-cont-tool::after {
+        left: 15%;
+    }
+}
